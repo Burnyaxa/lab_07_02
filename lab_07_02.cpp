@@ -1,4 +1,4 @@
-// lab_07_02.cpp: определяет точку входа для консольного приложения.
+// lab_07_02.cpp: Г®ГЇГ°ГҐГ¤ГҐГ«ГїГҐГІ ГІГ®Г·ГЄГі ГўГµГ®Г¤Г  Г¤Г«Гї ГЄГ®Г­Г±Г®Г«ГјГ­Г®ГЈГ® ГЇГ°ГЁГ«Г®Г¦ГҐГ­ГЁГї.
 //
 
 #include "stdafx.h"
@@ -21,11 +21,11 @@ int _tmain(int argc, _TCHAR* argv[])
 	return 0;
 }
 double *create_array(int n){
-	srand(time(NULL));
 	double *arr = new double[n];
 	return arr;
  }
 void output_array(double *arr, int n){
+	srand(time(NULL));
 	cout << "B(n): ";
 	for (int i = 0; i < n; i++){
 		arr[i] = (rand() % 100 - 50) * 0.1;
