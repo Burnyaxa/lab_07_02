@@ -39,12 +39,12 @@ int _tmain(int argc, _TCHAR* argv[])
 }
 
 float *createArray(int n){
-	srand(time(0));
 	float *arr = new float[n];
 	return arr;
 }
 
 void initializeArray(float *arr, int n){
+	srand(time(0));
 	for (int i = 0; i < n; i++){
 		arr[i] = rand() % ARRAY_RANGE;
 	}
